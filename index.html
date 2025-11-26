@@ -19,7 +19,9 @@
 <!-- HEADER -->
 <header>
   <div class="container header-container">
-    <div class="logo">VOTIVE MOTIVE</div>
+    <div class="logo">
+      <img src="votive motive Logo.png" alt="Your Company Logo" height="50">
+    </div>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -35,29 +37,49 @@
 </header>
 
 <!-- SPLIT HERO SECTION -->
-<section class="hero-section-split">
-  <div class="container hero-split">
-    <div class="hero-text-left">
-      <h1>Experience Luxury Hospitality</h1>
-      <p>Our premium toiletries and amenities elevate every guest stay.</p>
-      <a href="collections.html" class="btn">Explore Collections</a>
-    </div>
-    <div class="hero-slider-right swiper hero-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://via.placeholder.com/600x500" alt="Product 1">
-        </div>
-        <div class="swiper-slide">
-          <img src="https://via.placeholder.com/600x500/333" alt="Product 2">
-        </div>
-        <div class="swiper-slide">
-          <img src="https://via.placeholder.com/600x500/666" alt="Product 3">
+<!-- HERO SLIDER -->
+<section class="hero-section">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="hero-slide" style="background-image: url('SustainabilityPage.png');">
+          <div class="hero-text">
+            <h1>Premium Hospitality Products</h1>
+            <p>Elevate your guest experience with luxury amenities.</p>
+            <a href="collections.html" class="btn">Explore Collections</a>
+          </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="hero-slide" style="background-image: url('https://via.placeholder.com/1600x700/333');">
+          <div class="hero-text">
+            <h1>Luxury Amenities for Hotels</h1>
+            <p>Sustainable and high-quality products for every guest.</p>
+            <a href="collections.html" class="btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="hero-slide" style="background-image: url('https://via.placeholder.com/1600x700/666');">
+          <div class="hero-text">
+            <h1>Customized Gift Packs</h1>
+            <p>Perfect corporate gifting solution for any occasion.</p>
+            <a href="collections.html" class="btn">View Gifts</a>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Navigation arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
+
 
 <!-- FEATURED PRODUCTS GRID -->
 <section class="section products-grid-section">

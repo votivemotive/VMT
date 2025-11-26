@@ -65,3 +65,13 @@ if (window.gsap) {
     gsap.from(el, { y: 12, opacity: 0, duration: 0.8, delay: 0.06 * i, ease: 'power2.out' });
   });
 }
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const heroSwiper = new Swiper('.hero-swiper', {
+  loop: true,
+  autoplay: { delay: 5000, disableOnInteraction: false },
+  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+  pagination: { el: '.swiper-pagination', clickable: true },
+  effect: 'fade',
+});
+</script>
