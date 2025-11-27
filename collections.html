@@ -1,78 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votive Motive | Collections</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Collections — Votive Motive</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="homestyle.css"/>
 </head>
 <body>
+  <!-- header same as index -->
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"/></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="collections.html" class="active">Collections</a>
+        <a href="product.html">Product</a>
+        <a href="b2b.html">B2B</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle2" aria-label="menu">☰</button>
+    </div>
+  </header>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">VOTIVE MOTIVE</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="collections.html" class="active">Collections</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <main class="section wrap">
+    <h1>Collections</h1>
+    <div class="grid products-grid">
+      <article class="product-card">
+        <a href="product.html">
+          <img src="images/placeholder1.jpg" alt="">
+          <h3>Luxury Shampoo</h3>
+          <p>25ml premium shampoo for hotels.</p>
+        </a>
+      </article>
 
-    <!-- Collections Hero -->
-    <section class="hero" style="background-image: url('https://via.placeholder.com/1600x500'); height: 50vh;">
-        <div class="hero-content">
-            <h1>Our Product Collections</h1>
-        </div>
-    </section>
+      <article class="product-card">
+        <a href="product.html">
+          <img src="images/placeholder2.jpg" alt="">
+          <h3>Body Lotion</h3>
+          <p>Hydrating lotion in travel-friendly size.</p>
+        </a>
+      </article>
 
-    <!-- Products Grid -->
-    <section class="featured-products">
-        <h2>Explore Our Products</h2>
-        <div class="products-grid">
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x300" alt="Shampoo">
-                <h3>Luxury Shampoo</h3>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x300" alt="Body Lotion">
-                <h3>Body Lotion</h3>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x300" alt="Bath Soap">
-                <h3>Bath Soap</h3>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x300" alt="Shower Gel">
-                <h3>Shower Gel</h3>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x300" alt="Gift Pack">
-                <h3>Gift Pack</h3>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x300" alt="Bath Salt">
-                <h3>Bath Salt</h3>
-            </div>
-        </div>
-    </section>
+      <article class="product-card">
+        <a href="product.html">
+          <img src="images/placeholder3.jpg" alt="">
+          <h3>Shower Gel</h3>
+          <p>Refreshing gel with gentle formula.</p>
+        </a>
+      </article>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Votive Motive. All rights reserved.</p>
-            <div class="socials">
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
-            </div>
-        </div>
-    </footer>
+      <article class="product-card">
+        <a href="product.html">
+          <img src="images/product-sample.jpg" alt="">
+          <h3>Gift Pack</h3>
+          <p>Customizable corporate gift packs.</p>
+        </a>
+      </article>
+    </div>
+  </main>
 
+  <footer class="site-footer">
+    <div class="wrap footer-grid"><!-- same footer content --></div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

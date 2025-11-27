@@ -1,64 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votive Motive | Contact</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Votive Motive</title>
+  <link rel="stylesheet" href="homestyle.css"/>
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap"><a href="index.html"><img src="images/logo.png" class="logo" alt="logo"/></a>
+      <nav class="main-nav"><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="product.html">Product</a><a href="b2b.html">B2B</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a></nav>
+      <button class="menu-toggle" id="menuToggle6">☰</button>
+    </div>
+  </header>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">VOTIVE MOTIVE</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="collections.html">Collections</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <main class="section wrap contact-page">
+    <h1>Contact Us</h1>
+    <p>Reach out for quotes, samples and collaborations.</p>
 
-    <!-- Contact Hero -->
-    <section class="hero" style="background-image: url('https://via.placeholder.com/1600x500'); height: 50vh;">
-        <div class="hero-content">
-            <h1>Contact Us</h1>
-        </div>
-    </section>
+    <div class="contact-grid">
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your name" required/>
+        <input type="email" name="email" placeholder="Your email" required/>
+        <input type="tel" name="phone" placeholder="Phone"/>
+        <textarea name="message" placeholder="Your message" rows="6"></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
 
-    <!-- Contact Form -->
-    <section>
-        <h2>Get In Touch</h2>
-        <form class="contact-form" style="max-width: 600px; margin: auto;">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Your Phone">
-            <textarea placeholder="Your Message" rows="6" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+      <aside class="contact-info">
+        <h4>Office</h4>
+        <p>Votive Motive Pvt Ltd<br/>Mumbai, India</p>
+        <p>Email: info@votivemotive.com</p>
+        <p>Phone: +91 1234 567890</p>
+      </aside>
+    </div>
+  </main>
 
-        <p style="text-align:center; margin-top:20px;">
-            Or contact us directly at <a href="mailto:info@votivemotive.com">info@votivemotive.com</a> 
-            or <a href="https://wa.me/911234567890" target="_blank">WhatsApp</a>.
-        </p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Votive Motive. All rights reserved.</p>
-            <div class="socials">
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
-            </div>
-        </div>
-    </footer>
-
+  <footer class="site-footer"><div class="wrap footer-grid"></div></footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
