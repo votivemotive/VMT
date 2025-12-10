@@ -61,27 +61,29 @@ const track = document.querySelector('.brand-track');
 const clone = track.innerHTML;
 track.innerHTML += clone;
 
-<script>
-let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
+<><script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
 
-function showSlide(n) {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[n].classList.add("active");
-}
+  function showSlide(n) {slides.forEach(slide => slide.classList.remove("active"))};
+  slides[n].classList.add("active");
+  }
 
-function nextSlide() {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
-}
+  function nextSlide() {slideIndex = (slideIndex + 1) % slides.length};
+  showSlide(slideIndex);
+  }
 
-function prevSlide() {
-    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-    showSlide(slideIndex);
-}
+  function prevSlide() {slideIndex = (slideIndex - 1 + slides.length) % slides.length};
+  showSlide(slideIndex);
+  }
 
-setInterval(nextSlide, 3000);
+  setInterval(nextSlide, 3000);
 
-showSlide(slideIndex);
-</script>
-
+  showSlide(slideIndex);
+</script><script>
+    document.querySelectorAll(".insta-card").forEach(card => {card.addEventListener("click", function () {
+      const link = this.dataset.url;
+      window.open(link, "_blank");
+    })};
+    });
+  </script></>
